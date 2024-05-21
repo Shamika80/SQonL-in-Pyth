@@ -1,4 +1,3 @@
-import mysql.connector
 
 def list_distinct_trainers(connection):
     """Fetches a list of distinct trainer IDs from the 'Members' table."""
@@ -38,7 +37,6 @@ def count_members_per_trainer(connection):
 
 
 def get_members_in_age_range(connection, start_age, end_age):
-    """Retrieves members with ages within the specified range."""
 
     try:
         if start_age > end_age:
